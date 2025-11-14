@@ -7,7 +7,7 @@ import seaborn as sns
 # 1. CONFIGURACIÓN INICIAL
 # ===============================
 
-# Crear la carpeta reports si no existe
+# Crear carpeta reports si no existe
 REPORTS_DIR = os.path.join(os.path.dirname(__file__), "..", "reports")
 os.makedirs(REPORTS_DIR, exist_ok=True)
 
@@ -17,12 +17,15 @@ DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "merged_unicef
 # Cargar datos
 df = pd.read_csv(DATA_PATH)
 
+# Normalizar nombre de país (preferimos UNICEF)
+df["country_name"] = df["country_name_y"]
+
 print("📊 Dataset cargado correctamente:")
 print(df.head())
 
 
 # ===============================
-# 2. GRÁFICO: Scatter pobreza vs asistencia escolar
+# 2. SCATTER: Pobreza vs Asistencia
 # ===============================
 
 plt.figure(figsize=(10,6))
@@ -33,7 +36,7 @@ sns.scatterplot(
     alpha=0.6
 )
 plt.title("Relación: Pobreza extrema vs Asistencia Escolar")
-plt.xlabel("Pobreza extrema (% población debajo de $2.15/día)")
+plt.xlabel("Pobreza extrema (% población bajo $2.15/día)")
 plt.ylabel("Asistencia escolar primaria (%)")
 
 scatter_path = os.path.join(REPORTS_DIR, "scatter_poverty_vs_attendance.png")
@@ -59,7 +62,7 @@ print(f"📁 Heatmap guardado en: {corr_path}")
 
 
 # ===============================
-# 4. TOP 20: Países con menor asistencia escolar
+# 4. TOP 20 con menor asistencia
 # ===============================
 
 top20 = df.sort_values("school_attendance").head(20)
@@ -81,7 +84,7 @@ print(f"📁 Ranking (asistencia) guardado en: {top20_path}")
 
 
 # ===============================
-# 5. TOP 20: Países con mayor pobreza
+# 5. TOP 20 con mayor pobreza
 # ===============================
 
 top20_poverty = df.sort_values("poverty_rate", ascending=False).head(20)
@@ -104,7 +107,7 @@ print(f"📁 Ranking (pobreza) guardado en: {top20p_path}")
 
 
 # ===============================
-# 6. MENSAJE FINAL
+# 6. FINAL
 # ===============================
 
 print("\n🎉 Todos los reportes fueron generados en la carpeta /reports/")

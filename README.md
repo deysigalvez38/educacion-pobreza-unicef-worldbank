@@ -105,7 +105,8 @@ A mayor pobreza → menor asistencia escolar.
 
 
 🧰 8. Estructura del proyecto
-educacion-pobreza-unicef-worldbank/
+educacion-pobreza-unicef-worldbank
+/
 │
 ├── data/
 │   ├── Datos_de_asistencia_escolar.csv

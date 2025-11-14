@@ -1,1 +1,18 @@
-country_code,country_name,year,poverty_rate,school_attendance
+country,year,poverty_rate,country_name,country_code,Unnamed: 0,school_attendance
+"{'id': 'BJ', 'value': 'Benin'}",2018,37.2,Benin,BEN,60,48.09999847412109
+"{'id': 'BJ', 'value': 'Benin'}",2018,37.2,Benin,BEN,298,68.30000305175781
+"{'id': 'BJ', 'value': 'Benin'}",2018,37.2,Benin,BEN,536,30.399999618530277
+"{'id': 'BJ', 'value': 'Benin'}",2018,37.2,Benin,BEN,774,11.800000190734863
+"{'id': 'BT', 'value': 'Bhutan'}",2012,3.6,Bhutan,BTN,299,95.1999969482422
+"{'id': 'GN', 'value': 'Guinea'}",2018,11.7,Guinea,GIN,114,51.942970275878906
+"{'id': 'GN', 'value': 'Guinea'}",2018,11.7,Guinea,GIN,352,66.13343048095703
+"{'id': 'GN', 'value': 'Guinea'}",2018,11.7,Guinea,GIN,590,31.911380767822266
+"{'id': 'GN', 'value': 'Guinea'}",2018,11.7,Guinea,GIN,828,12.7264404296875
+"{'id': 'MW', 'value': 'Malawi'}",2016,71.7,Malawi,MWI,148,62.83565139770508
+"{'id': 'MW', 'value': 'Malawi'}",2016,71.7,Malawi,MWI,386,93.6999969482422
+"{'id': 'MW', 'value': 'Malawi'}",2016,71.7,Malawi,MWI,624,28.0
+"{'id': 'MW', 'value': 'Malawi'}",2016,71.7,Malawi,MWI,862,17.399999618530273
+"{'id': 'UG', 'value': 'Uganda'}",2016,60.1,Uganda,UGA,230,72.31742095947266
+"{'id': 'UG', 'value': 'Uganda'}",2016,60.1,Uganda,UGA,468,84.80000305175781
+"{'id': 'UG', 'value': 'Uganda'}",2016,60.1,Uganda,UGA,706,19.399999618530277
+"{'id': 'UG', 'value': 'Uganda'}",2016,60.1,Uganda,UGA,944,7.800000190734863
